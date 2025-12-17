@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0"
+            prefWidth="645.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="org.example.controllers.FileSaverController">
+   <Label layoutX="230.0" layoutY="14.0" prefHeight="27.0" prefWidth="226.0" text="СОХРАНЕНИЕ В ФАЙЛ">
+      <font>
+         <Font size="18.0"/>
+      </font>
+   </Label>
+   <TextField fx:id="fileName" layoutX="145.0" layoutY="223.0" prefHeight="26.0" prefWidth="375.0"/>
+   <Button layoutX="431.0" layoutY="269.0" mnemonicParsing="false" onMouseClicked="#saveToFile" prefHeight="27.0"
+           prefWidth="89.0" text="СОХРАНИТЬ" textFill="#001eff"/>
+   <Button layoutX="28.0" layoutY="446.0" mnemonicParsing="false" onMouseClicked="#backToSection" prefHeight="26.0"
+           prefWidth="70.0" text="НАЗАД"/>
+   <Text layoutX="145.0" layoutY="210.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Введите путь файла"/>
+   <Text layoutX="145.0" layoutY="263.0" strokeType="OUTSIDE" strokeWidth="0.0"
+         text="Подсказка: если файл не будет найден, то он будет создан">
+      <font>
+         <Font size="10.0"/>
+      </font>
+   </Text>
+</AnchorPane>

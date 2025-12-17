@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="645.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controllers.SectionsController">
+   <children>
+      <Text layoutX="226.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="СЕКЦИИ СКЛАДА" wrappingWidth="148.143798828125">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+
+      <ListView fx:id="sectionsList" layoutX="309.0" layoutY="71.0" prefHeight="338.0" prefWidth="312.0" />
+      <Button layoutX="157.0" layoutY="414.0" mnemonicParsing="false" onMouseClicked="#addSection" prefHeight="30.0" prefWidth="114.0" text="ДОБАВИТЬ" textFill="#3700ff" />
+      <Button layoutX="309.0" layoutY="414.0" mnemonicParsing="false" onMouseClicked="#removeSection" prefHeight="30.0" prefWidth="91.0" text="УДАЛИТЬ" textFill="RED" />
+      <Button layoutX="413.0" layoutY="414.0" mnemonicParsing="false" onMouseClicked="#openSection" prefHeight="30.0" prefWidth="104.0" text="ОТКРЫТЬ" />
+
+      <Text layoutX="29.0" layoutY="283.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Название секции" />
+      <TextField fx:id="sectionNameField" layoutX="27.0" layoutY="294.0" prefHeight="30.0" prefWidth="243.0" />
+      <Text layoutX="27.0" layoutY="353.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Количество ячеек" />
+      <TextField fx:id="countOfCellsField" layoutX="27.0" layoutY="365.0" prefHeight="30.0" prefWidth="243.0" />
+      <Button layoutX="27.0" layoutY="71.0" mnemonicParsing="false" onMouseClicked="#saveToFile" text="СОХРАНИТЬ В ФАЙЛ" />
+   </children>
+</AnchorPane>
